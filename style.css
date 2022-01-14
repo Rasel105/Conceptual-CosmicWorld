@@ -101,6 +101,7 @@ nav {
 
 .banner {
     height: calc(100vh - 80px);
+    min-height: 500px;
     display: grid;
     grid-template-columns: 1fr 1fr;
 }
@@ -148,6 +149,7 @@ nav {
     width: 300px;
     margin: 0 auto;
     padding: 30px;
+    border-radius: 5px;
     box-shadow: 0 30px 35px rgba(0, 0, 0, 0.2);
 }
 
@@ -173,4 +175,59 @@ nav {
 .card a {
     text-decoration: none;
     color: #ff008e;
+}
+
+
+/* gallary past star here  */
+
+.gallary {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 30px;
+}
+
+.photo img {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+    border: 3px solid #ff008e;
+}
+
+
+/* Contact section start here  */
+
+.contact {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 30px;
+}
+
+.contact-left img {
+    width: 100%;
+}
+
+.contact-right form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.text-field {
+    width: 100%;
+    margin: 10px 0;
+    padding: 10px;
+    font-size: 18px;
+    font-family: inherit;
+    outline: 0;
+    border: 1px solid #ff008e;
+}
+
+
+/* footer section  */
+
+footer {
+    height: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
